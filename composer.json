@@ -1,0 +1,27 @@
+{
+  "name": "x2ts/x2ts-rpc",
+  "description": "The RPC module",
+  "type": "library",
+  "require": {
+    "x2ts/x2ts": "^2.0.0",
+    "ext-swoole": ">=1.9.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.1.*",
+    "phpunit/php-code-coverage": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "x2ts\\daemon\\": [
+        "src"
+      ]
+    }
+  },
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "TingSong-Syu",
+      "email": "rek@rek.me"
+    }
+  ]
+}
