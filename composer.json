@@ -1,6 +1,6 @@
 {
-  "name": "x2ts/x2ts-rpc",
-  "description": "The RPC module",
+  "name": "x2ts/x2ts-daemon",
+  "description": "The daemon module",
   "type": "library",
   "require": {
     "x2ts/x2ts": "^2.0.0",
