@@ -221,6 +221,7 @@ class Daemon extends Component {
             @swoole_set_process_name($this->name . ': master');
         }
         swoole_process::signal(SIGTERM, [$this, '_signalTerm']);
+        swoole_process::signal(SIGINT, [$this, '_signalTerm']);
         swoole_process::signal(SIGCHLD, [$this, '_signalChild']);
         for ($i = 0; $i < $this->workerNum; $i++) {
             $worker = new swoole_process([$this, '_workerStartDelegate']);
